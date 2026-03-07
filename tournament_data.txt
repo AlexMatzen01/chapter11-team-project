@@ -1,0 +1,119 @@
+BEGIN_TEAM
+TEAM_NAME: Binary Beasts
+WINS: 5
+LOSSES: 2
+PLAYERS: 4
+PLAYER_DATA:
+Alice|Sniper|18|6
+Ben|Support|10|12
+Charlie|Tank|9|8
+Derek|Scout|14|7
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Code Warriors
+WINS: 7
+LOSSES: 1
+PLAYERS: 4
+PLAYER_DATA:
+Diana|Sniper|21|5
+Ethan|Support|12|7
+Frank|Tank|15|9
+Grace|Scout|17|6
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Logic Lords
+WINS: 4
+LOSSES: 3
+PLAYERS: 4
+PLAYER_DATA:
+Hector|Tank|11|10
+Isla|Sniper|19|7
+Jason|Support|8|11
+Kara|Scout|16|8
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Pointer Pirates
+WINS: 6
+LOSSES: 2
+PLAYERS: 4
+PLAYER_DATA:
+Liam|Tank|13|9
+Maya|Sniper|20|6
+Noah|Support|11|10
+Olivia|Scout|15|7
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Vector Vipers
+WINS: 3
+LOSSES: 5
+PLAYERS: 4
+PLAYER_DATA:
+Paul|Tank|10|13
+Quinn|Sniper|17|9
+Riley|Support|9|12
+Sophia|Scout|14|10
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Compile Crew
+WINS: 5
+LOSSES: 3
+PLAYERS: 4
+PLAYER_DATA:
+Tyler|Tank|12|11
+Uma|Sniper|22|6
+Victor|Support|10|10
+Willow|Scout|16|9
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Debug Dynamos
+WINS: 4
+LOSSES: 4
+PLAYERS: 4
+PLAYER_DATA:
+Xavier|Tank|11|10
+Yara|Sniper|18|7
+Zane|Support|9|12
+Aria|Scout|13|9
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Recursive Raiders
+WINS: 6
+LOSSES: 2
+PLAYERS: 4
+PLAYER_DATA:
+Blake|Tank|14|8
+Cora|Sniper|21|5
+Dylan|Support|10|9
+Elena|Scout|17|7
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Kernel Knights
+WINS: 3
+LOSSES: 5
+PLAYERS: 4
+PLAYER_DATA:
+Finn|Tank|9|12
+Gia|Sniper|16|9
+Hugo|Support|11|11
+Ivy|Scout|12|10
+END_TEAM
+
+BEGIN_TEAM
+TEAM_NAME: Runtime Rebels
+WINS: 5
+LOSSES: 3
+PLAYERS: 4
+PLAYER_DATA:
+Jack|Tank|13|8
+Kira|Sniper|19|6
+Leo|Support|10|9
+Mila|Scout|15|8
+END_TEAM
