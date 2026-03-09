@@ -46,3 +46,4 @@ I, Alex Matzen, will take on the duty of ensuring that all individual modules wi
 - [ ] 14+ Modular functions
 - [ ] Report generation output
 
+<img width="223" height="226" alt="download" src="https://github.com/user-attachments/assets/d9c07d43-4116-41ad-9f6d-3a5573304a02" />
