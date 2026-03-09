@@ -14,7 +14,7 @@ I, Alex Matzen, will take on the duty of ensuring that all individual modules wi
 | :--- | :--- | :--- |
 | **Alex Matzen** | File input system, Struct design, Memory management | ✅ Complete |
 | **Liam Dowell** | Team parsing & Logic | ⏳ Waiting |
-| **Gage Boyd** | Player data parsing | ⏳ Waiting |
+| **Gage Boyd** | Player data parsing | ✅ Complete |
 | **Luke Bishop** | Statistical calculations | ⏳ Waiting |
 | **Max Barlow** | Statistical calculations | ⏳ Waiting |
 | **Jacob Losey** | String utilities & formatting | ⏳ Waiting |
