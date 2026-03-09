@@ -16,7 +16,7 @@ I, Alex Matzen, will take on the duty of ensuring that all individual modules wi
 | **Liam Dowell** | Team parsing & Logic | ⏳ Waiting |
 | **Gage Boyd** | Player data parsing | ⏳ Waiting |
 | **Luke Bishop** | Statistical calculations | ⏳ Waiting |
-| **Max Barlow** | Statistical calculations | ⏳ Waiting |
+| **Max Barlow** | Statistical calculations | ✅ Complete |
 | **Jacob Losey** | String utilities & formatting | ⏳ Waiting |
 | **Ethan Todd** | Report generation & Integration testing | ⏳ Waiting |
 | **Alex Matzen** | Module Integration (requires all other roles to be complete) | ⏳ Waiting |
