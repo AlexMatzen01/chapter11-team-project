@@ -19,6 +19,7 @@ I, Alex Matzen, will take on the duty of ensuring that all individual modules wi
 | **Max Barlow** | Statistical calculations | ⏳ Waiting |
 | **Jacob Losey** | String utilities & formatting | ⏳ Waiting |
 | **Ethan Todd** | Report generation & Integration testing | ⏳ Waiting |
+| **Alex Matzen** | Module Integration (requires all other roles to be complete) | ⏳ Waiting |
 
 ## Architecture
 - **Nested Structs**: `Tournament` → `Team` → `Player`.
