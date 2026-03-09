@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\2017249\\Desktop\\chapter11-team-project\\Stats\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{982B3551-AE33-4E99-ABB0-AD09FE8A4A27}|Stats\\Stats.vcxproj|C:\\Users\\2017249\\Desktop\\chapter11-team-project\\Stats\\Stats\\Stats.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{982B3551-AE33-4E99-ABB0-AD09FE8A4A27}|Stats\\Stats.vcxproj|solutionrelative:Stats\\Stats.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stats.cpp",
+              "DocumentMoniker": "C:\\Users\\2017249\\Desktop\\chapter11-team-project\\Stats\\Stats\\Stats.cpp",
+              "RelativeDocumentMoniker": "Stats\\Stats.cpp",
+              "ToolTip": "C:\\Users\\2017249\\Desktop\\chapter11-team-project\\Stats\\Stats\\Stats.cpp",
+              "RelativeToolTip": "Stats\\Stats.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-09T18:41:27.688Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
