@@ -13,13 +13,13 @@ I, Alex Matzen, will take on the duty of ensuring that all individual modules wi
 | Member | Responsibility | Status |
 | :--- | :--- | :--- |
 | **Alex Matzen** | File input system, Struct design, Memory management | ✅ Complete |
-| **Liam Dowell** | Team parsing & Logic | ⏳ Waiting |
+| **Liam Dowell** | Team parsing & Logic | ✅ Complete |
 | **Gage Boyd** | Player data parsing | ✅ Complete |
-| **Luke Bishop** | Statistical calculations | ⏳ Waiting |
+| **Luke Bishop** | Statistical calculations | ✅ Complete |
 | **Max Barlow** | Statistical calculations | ✅ Complete |
-| **Jacob Losey** | String utilities & formatting | ⏳ Waiting |
-| **Ethan Todd** | Report generation & Integration testing | ⏳ Waiting |
-| **Alex Matzen** | Module Integration (requires all other roles to be complete) | ⏳ Waiting |
+| **Jacob Losey** | String utilities & formatting | ✅ Complete |
+| **Ethan Todd** | Report generation & Integration testing | ✅ Complete |
+| **Alex Matzen** | Module Integration & Polishing (requires all other roles to be complete) | ✅ Complete |
 
 ## Architecture
 - **Nested Structs**: `Tournament` → `Team` → `Player`.
@@ -43,7 +43,7 @@ I, Alex Matzen, will take on the duty of ensuring that all individual modules wi
 - [x] Use of vectors/arrays
 - [x] File input system
 - [x] Memory management (Cleanup logic)
-- [ ] 14+ Modular functions
-- [ ] Report generation output
+- [x] 14+ Modular functions
+- [x] Report generation output
 
 <img width="223" height="226" alt="download" src="https://github.com/user-attachments/assets/d9c07d43-4116-41ad-9f6d-3a5573304a02" />

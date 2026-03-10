@@ -1,0 +1,53 @@
+# Ignore build artifacts and executables
+*.exe
+*.obj
+*.o
+*.out
+*.log
+*.tmp
+*.bak
+*.user
+*.swp
+
+# Ignore Visual Studio files
+*.vcxproj*
+*.sln
+*.pdb
+*.ipch
+*.db
+*.opensdf
+*.sdf
+*.cache
+*.ilk
+*.ncb
+*.idb
+*.tlog
+*.vs/
+
+# Ignore macOS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Ignore folders for build outputs
+/build/
+/bin/
+/debug/
+/release/
+
+# Ignore temporary files
+*.~
+*.temp
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore other common files
+*.class
+*.pyc
+*.csv
+*.tsv
+*.sqlite
+*.env
+
+# Ignore by default
+# !README.md
