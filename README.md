@@ -45,5 +45,5 @@ I, Alex Matzen, will take on the duty of ensuring that all individual modules wi
 - [x] Memory management (Cleanup logic)
 - [x] 14+ Modular functions
 - [x] Report generation output
-
+<img width="116" height="91" alt="Screenshot 2026-02-24 075344" src="https://github.com/user-attachments/assets/87063916-fe18-4ec3-ab09-34578733c86d" />
 <img width="223" height="226" alt="download" src="https://github.com/user-attachments/assets/d9c07d43-4116-41ad-9f6d-3a5573304a02" />
