@@ -34,6 +34,7 @@ struct Tournament {
 void loadTournamentData(const string& filename, Tournament& tournament);
 void saveTournamentData(const string& filename, const Tournament& tournament);
 void exportFinalReport(const string& filename, const Tournament& tournament);
+void generateTournamentReport(const string& filename, const Tournament& tournament);
 void generateTournamentStats(const Tournament& tournament);
 void sortTeamsByPerformance(Tournament& tournament);
 double calculateWinRate(const Team* t);
@@ -80,6 +81,9 @@ int main() {
         
         // Export formal report
         exportFinalReport(REPORT_FILE, myTournament);
+
+        // Also generate a full detailed tournament report for the assignment
+        generateTournamentReport("tournament_report.txt", myTournament);
         
         // Save raw data state
         saveTournamentData(SUMMARY_FILE, myTournament);
@@ -193,6 +197,78 @@ void exportFinalReport(const string& filename, const Tournament& tournament) {
     report.close();
 }
 
+void generateTournamentReport(const string& filename, const Tournament& tournament) {
+    ofstream out(filename);
+    out << "=================================\n";
+    out << "      TOURNAMENT REPORT\n";
+    out << "=================================\n\n";
+
+    int totalPlayers = 0;
+    string topPlayerName = "N/A";
+    int topPlayerKills = -1;
+    string teamMostWins = "N/A";
+    int mostWins = -1;
+
+    for (const auto& t : tournament.teams) {
+        out << "Team: " << t->teamName << "\n";
+        out << "Wins: " << t->wins << "\n";
+        out << "Losses: " << t->losses << "\n\n";
+
+        out << "Players\n";
+        out << "----------------------------\n";
+
+        int teamKills = 0;
+        int teamDeaths = 0;
+        string bestPlayer = "N/A";
+        double bestKD = -1.0;
+
+        for (int i = 0; i < t->playerCount; ++i) {
+            const Player& p = t->players[i];
+            out << left << setw(11) << p.name << setw(9) << p.role
+                << p.kills << " K / " << p.deaths << " D\n";
+
+            teamKills += p.kills;
+            teamDeaths += p.deaths;
+            totalPlayers++;
+
+            if (p.kills > topPlayerKills) {
+                topPlayerKills = p.kills;
+                topPlayerName = p.name;
+            }
+
+            double kd = (p.deaths == 0) ? p.kills : (double)p.kills / p.deaths;
+            if (kd > bestKD) { bestKD = kd; bestPlayer = p.name; }
+        }
+
+        out << "\n";
+        out << "Team Kills: " << teamKills << "\n";
+        out << "Team Deaths: " << teamDeaths << "\n";
+        out << "Best Player: " << bestPlayer << "\n\n";
+        out << "--------------------------------\n\n";
+
+        if (t->wins > mostWins) { mostWins = t->wins; teamMostWins = t->teamName; }
+    }
+
+    // Global stats
+    int totalTeams = (int)tournament.teams.size();
+    int avgKills = totalPlayers == 0 ? 0 : (topPlayerKills * totalPlayers) / totalPlayers; // placeholder if needed
+    // Compute average kills properly
+    int totalKills = 0;
+    for (const auto& t : tournament.teams) {
+        for (int i = 0; i < t->playerCount; ++i) totalKills += t->players[i].kills;
+    }
+    avgKills = totalPlayers == 0 ? 0 : totalKills / totalPlayers;
+
+    out << "GLOBAL TOURNAMENT STATS\n\n";
+    out << "Total Teams: " << totalTeams << "\n";
+    out << "Total Players: " << totalPlayers << "\n";
+    out << "Top Player: " << topPlayerName << " (" << topPlayerKills << " kills)\n";
+    out << "Team with Most Wins: " << teamMostWins << "\n";
+    out << "Average Kills per Player: " << avgKills << "\n";
+
+    out.close();
+}
+
 void addManualPlayerData(Tournament& tournament) {
     Team* t = new Team();
     cout << "Team Name: "; cin.ignore(); getline(cin, t->teamName);
@@ -254,5 +330,14 @@ string toUpper(string s) {
 bool runSelfTests() {
     if (trim("  hi  ") != "hi") return false;
     if (toUpper("abc") != "ABC") return false;
+    // Test parsing player data
+    Player testP;
+    parsePlayerData(string("Alice|Sniper|18|6"), testP);
+    if (testP.name != "Alice" || testP.role != "Sniper" || testP.kills != 18 || testP.deaths != 6) return false;
+
+    // Test win rate calculation
+    Team testT;
+    testT.wins = 1; testT.losses = 1;
+    if (calculateWinRate(&testT) != 50.0) return false;
     return true;
 }
